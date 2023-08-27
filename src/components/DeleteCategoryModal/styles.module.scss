@@ -1,0 +1,50 @@
+.modal {
+  background: #272934;
+  max-width: 400px;
+}
+
+.modalHeader {
+  color: var(--white, #FFF);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+
+
+.modalContent {
+  color: #9B9D9F;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+
+.btnWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.submitModalBtn {
+  background: linear-gradient(90deg, #A139FD 0%, #50BDFC 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 16px;
+  margin-bottom: 6px;
+
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: capitalize;
+}
+
+.cancelBtn {
+  color: var(--error-color);
+}

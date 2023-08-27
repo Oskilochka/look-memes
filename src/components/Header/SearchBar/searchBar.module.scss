@@ -1,0 +1,28 @@
+.root {
+  background: #30313C;
+  border-radius: 4px;
+  display: flex;
+  height: 40px;
+  padding: 15px 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 380px;
+
+  color: var(--text-color-secondary);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  border: 1px solid #30313C;
+}
+
+.input {
+  all: unset;
+}
+
+.root:focus-within  {
+  border: 1px solid var(--text-color-secondary);
+}
+
+

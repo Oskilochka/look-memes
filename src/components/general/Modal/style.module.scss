@@ -1,0 +1,102 @@
+.root {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 250px;
+  max-width: calc(100vw - 40px);
+  max-height: calc(100vh - 40px);
+  padding: 24px;
+
+  border-radius: 5px;
+
+  background-color: white;
+
+  outline: none;
+}
+
+.scrollbar {
+  flex: 0 1 auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(26, 26, 26, 0.8);
+}
+
+.header {
+  margin: 14px 0 36px 0;
+
+  color: black;
+  font-weight: 300;
+  font-size: 42px;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+
+  user-select: none;
+}
+
+.header:empty {
+  height: 0;
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin-top: 30px;
+}
+
+.cancel {
+  font-size: 16px;
+}
+
+.submit {
+  min-width: 210px;
+}
+
+.cancel > svg {
+  margin-top: 2px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  color: gray;
+
+  border: none;
+
+  background-color: transparent;
+
+  outline: none;
+
+  cursor: pointer;
+
+  user-select: none;
+  pointer-events: all;
+
+  &:hover {
+    color: blue;
+  }
+
+  > svg {
+    width: 16px;
+    height: 16px;
+  }
+}
