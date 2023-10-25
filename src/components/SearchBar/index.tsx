@@ -1,8 +1,8 @@
-import styles from "./searchBar.module.scss";
-import SearchIcon from "/public/images/ic_search.svg";
 import Image from "next/image";
+import SearchIcon from "/public/images/ic_search.svg";
+import styles from "./styles.module.scss";
 
-export default function SearchBar() {
+export function SearchBar() {
   return (
     <div className={styles.root}>
       <input

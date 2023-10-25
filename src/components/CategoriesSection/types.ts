@@ -1,4 +1,3 @@
-
 export type ModalStateType = {
   isOpen: boolean,
   idToRemove?: string | null

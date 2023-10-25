@@ -1,20 +1,19 @@
 "use client";
-
-import { useRef, useEffect, useState, ReactNode } from "react";
+import React from "react";
 import { createPortal } from "react-dom";
 import classNames from "classnames";
-import styles from "./portal.module.scss";
+import styles from "./styles.module.scss";
 
 interface PortalProps {
-  children: ReactNode;
+  children: React.ReactNode;
   className?: string;
 }
 
 export const Portal = ({ children, className }: PortalProps) => {
-  const ref = useRef<Element | null>(null);
-  const [mounted, setMounted] = useState(false);
+  const ref = React.useRef<Element | null>(null);
+  const [mounted, setMounted] = React.useState(false);
 
-  useEffect(() => {
+  React.useEffect(() => {
     ref.current = document.querySelector<HTMLElement>("#portal");
     setMounted(true);
   }, []);

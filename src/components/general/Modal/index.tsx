@@ -5,7 +5,7 @@ import Image from "next/image";
 import CloseIcon from "/public/images/ic_close.svg";
 import styles from "./style.module.scss";
 
-export type ModalProps = {
+export type ModalProps = BaseModal.Props & {
   title?: string,
   children?: React.ReactNode,
   showCloseButton?: boolean,
@@ -13,7 +13,7 @@ export type ModalProps = {
   titleClassName?: string,
   buttonsClassName?: string,
   buttons?: React.ReactNode | React.ReactNode[],
-} & BaseModal.Props
+}
 
 export const Modal = (
   {

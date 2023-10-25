@@ -1,11 +1,11 @@
 import React from "react";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
-import styles from "./dnd.module.scss";
-import { Switcher } from "@/components/general/Switch/switcher";
+import styles from "./styles.module.scss";
+import { Switcher } from "@/components/general/Switch";
 import DeleteIcon from "/public/images/ic_delete.svg";
 import DragIcon from "/public/images/ic_drag.svg";
-import { IconButton } from "@/components/Header/IconButton/iconButton";
+import { IconButton } from "@/components/IconButton";
 import { useField } from "formik";
 import { CategoryType, ModalStateType } from "@/components/CategoriesSection/types";
 

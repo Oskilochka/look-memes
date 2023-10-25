@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import styles from "./iconButton.module.scss";
+import styles from "./styles.module.scss";
 import Image from "next/image";
 import DragIcon from "*.svg";
 

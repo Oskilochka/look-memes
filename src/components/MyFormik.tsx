@@ -2,7 +2,7 @@ import React from "react";
 import { FormikConfig, FormikErrors, FormikValues } from "formik/dist/types";
 import { Formik, validateYupSchema, yupToFormErrors } from "formik";
 
-export function Normik<Values extends FormikValues = FormikValues, ExtraProps = {}>(
+export function MyFormik<Values extends FormikValues = FormikValues, ExtraProps = {}>(
   {
     validationSchema,
     validate,
@@ -30,4 +30,4 @@ export function Normik<Values extends FormikValues = FormikValues, ExtraProps = 
   );
 }
 
-export default Normik;
+export default MyFormik;

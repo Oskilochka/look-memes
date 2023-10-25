@@ -1,7 +1,11 @@
-import styles from "./header.module.scss";
 import { ReactNode } from "react";
+import styles from "./styles.module.scss";
 
-export default function Header({ children }: { children: ReactNode }) {
+type HeaderProps = {
+  children: ReactNode
+}
+
+export function Header({ children }: HeaderProps) {
   return (
     <div className={styles.root}>
       <div className={styles.wrapper}>

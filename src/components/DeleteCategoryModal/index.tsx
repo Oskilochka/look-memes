@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Button } from "@/components/general/Button/button";
-import { Modal } from "@/components/general/Modal/modal";
+import { Button, Modal } from "@/components";
 import DeleteIcon from "/public/images/ic_delete.svg";
 import styles from "./styles.module.scss";
 
