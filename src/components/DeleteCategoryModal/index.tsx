@@ -1,21 +1,21 @@
 import React from "react";
 import Image from "next/image";
-import { Button, Modal } from "@/components";
+import { Button, Modal, ModalProps } from "@/components";
 import DeleteIcon from "/public/images/ic_delete.svg";
 import styles from "./styles.module.scss";
 
-type DeleteCategoryModalProps = {
+type DeleteCategoryModalProps =  {
   isOpen: boolean,
   onRequestClose: () => void,
   onSubmitClick?: (value: string) => void
 }
 
-export default function DeleteCategoryModal(
+export const DeleteCategoryModal = React.memo<DeleteCategoryModalProps>((
   {
     isOpen,
     onRequestClose,
     onSubmitClick
-  }: DeleteCategoryModalProps) {
+  }) => {
   return (
     <Modal
       isOpen={isOpen}
@@ -47,4 +47,4 @@ export default function DeleteCategoryModal(
       All templates in the category will be moved to the category "Other"
     </Modal>
   );
-}
+});
